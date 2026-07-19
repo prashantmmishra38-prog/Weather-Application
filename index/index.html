@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1><i class="fa-solid fa-cloud-sun"></i> Weather App</h1>
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button id="locationBtn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+
+        </div>
+
+        <!-- Error -->
+        <p id="error"></p>
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+
+            <div class="left">
+
+                <h2 id="city">Prayagraj</h2>
+
+                <p id="date">Thursday, 4 July</p>
+
+                <img
+                    id="weatherIcon"
+                    src="https://openweathermap.org/img/wn/01d@2x.png"
+                    alt="Weather Icon">
+
+                <h1 id="temp">31°C</h1>
+
+                <h3 id="condition">Clear Sky</h3>
+
+            </div>
+
+            <div class="right">
+
+                <div class="info">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <span>Feels Like</span>
+                    <strong id="feelsLike">33°C</strong>
+                </div>
+
+                <div class="info">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Humidity</span>
+                    <strong id="humidity">65%</strong>
+                </div>
+
+                <div class="info">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>Wind</span>
+                    <strong id="wind">12 km/h</strong>
+                </div>
+
+                <div class="info">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Pressure</span>
+                    <strong id="pressure">1012 hPa</strong>
+                </div>
+
+                <div class="info">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>Visibility</span>
+                    <strong id="visibility">10 km</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sunrise Sunset -->
+
+        <div class="sun-box">
+
+            <div class="sun">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <div>
+                    <p>Sunrise</p>
+                    <h3 id="sunrise">05:35 AM</h3>
+                </div>
+
+            </div>
+
+            <div class="sun">
+
+                <i class="fa-solid fa-moon"></i>
+
+                <div>
+                    <p>Sunset</p>
+                    <h3 id="sunset">06:58 PM</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Forecast -->
+
+        <h2 class="forecast-title">5-Day Forecast</h2>
+
+        <div class="forecast" id="forecast">
+
+            <!-- Day -->
+
+            <div class="forecast-card">
+                <p>Mon</p>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png">
+                <h3>32°C</h3>
+            </div>
+
+            <div class="forecast-card">
+                <p>Tue</p>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                <h3>29°C</h3>
+            </div>
+
+            <div class="forecast-card">
+                <p>Wed</p>
+                <img src="https://openweathermap.org/img/wn/03d@2x.png">
+                <h3>30°C</h3>
+            </div>
+
+            <div class="forecast-card">
+                <p>Thu</p>
+                <img src="https://openweathermap.org/img/wn/04d@2x.png">
+                <h3>28°C</h3>
+            </div>
+
+            <div class="forecast-card">
+                <p>Fri</p>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png">
+                <h3>33°C</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
