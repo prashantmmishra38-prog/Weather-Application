@@ -1,5 +1,5 @@
 # Weather-Application
-Weather Application frontend//
+Weather Application (Frontend)
 
 
-language used : HTML,CSS
+Language used : HTML,CSS
